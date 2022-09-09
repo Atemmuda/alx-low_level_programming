@@ -3,6 +3,9 @@
 #include <stdio.h>
 
 /* betty style doc for function main goes there */
+/**
+ *This program print whether a value is positive, negative or zero
+ */
 int main(void)
 {
 	int n;
@@ -10,10 +13,10 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
-		printf("%d is positive \n", n);
+		printf("%dis positive\n", n);
 
 	else if (n == 0)
-		printf("%d is zero \n", n);
+		printf("%dis zero\n", n);
 
 	else
 		printf("%d is negative", n);
