@@ -1,0 +1,40 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+
+/**
+ * main - Entry point
+ *
+ * num1 - holds the number between 0 an 10
+ * num2 - holds  the value of number between 0 and 10
+ *
+ * Return: 0 after printing the funtion
+ */
+int main(void)
+{
+	int num_1;
+	int num_2;
+
+	num_1 = 48;
+	num_2 = 48;
+
+	while (num_1 < 58)
+	{
+		putchar(num_1);
+
+		while (num_2 < 58)
+		{
+			putchar(num_2);
+			if (num_2 != 57)
+			{
+				putchar((int) ',');
+				putchar((int) ' ');
+			}
+			num_2++;
+		}
+		num_2++;
+	}
+
+	putchar('\n');
+	return (0);
+}
