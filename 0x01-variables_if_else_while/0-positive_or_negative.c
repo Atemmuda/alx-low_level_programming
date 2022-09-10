@@ -2,9 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
+
 /**
- *This program print whether a value is positive, negative or zero
+ * main - Entry point
+ *
+ * Return: 0 after printing the funtion
  */
 int main(void)
 {
