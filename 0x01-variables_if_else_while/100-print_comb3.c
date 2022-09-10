@@ -16,23 +16,23 @@ int main(void)
 	int num_2;
 
 	num_1 = 48;
-	num_2 = 48;
+	num_2 = 49;
 
-	while (num_1 < 58)
+	while (num_1 < 57)
 	{
 		putchar(num_1);
 
 		while (num_2 < 58)
 		{
 			putchar(num_2);
-			if (num_2 != 57)
+			if (num_1 != 56 && num_2 != 57)
 			{
 				putchar((int) ',');
 				putchar((int) ' ');
 			}
 			num_2++;
 		}
-		num_2++;
+		num_1++;
 	}
 
 	putchar('\n');
