@@ -20,10 +20,9 @@ int main(void)
 
 	while (num_1 < 57)
 	{
-		putchar(num_1);
-
 		while (num_2 < 58)
 		{
+			putchar(num_1);
 			putchar(num_2);
 			if (num_1 != 56 && num_2 != 57)
 			{
