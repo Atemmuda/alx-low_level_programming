@@ -17,7 +17,7 @@ int main(void)
 	/*
 	 * rem holds the remiander of n / 10
 	 */
-	int rem = n % 10;
+	 signed int rem = n % 10;
 	if (rem > 5)
 		printf("Last digit of %d" " is %d" " and is greater than 5", n, rem);
 
