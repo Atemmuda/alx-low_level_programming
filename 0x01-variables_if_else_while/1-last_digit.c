@@ -11,13 +11,14 @@
 int main(void)
 {
 	int n;
+	/*
+	 * rem holds the remainder of n / 10
+	 */
+	int rem = n % 10;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/*
-	 * rem holds the remiander of n / 10
-	 */
-	 signed int rem = n % 10;
+	
 	if (rem > 5)
 		printf("Last digit of %d" " is %d" " and is greater than 5", n, rem);
 
