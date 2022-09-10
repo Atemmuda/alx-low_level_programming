@@ -24,11 +24,8 @@ int main(void)
 	{
 		while (num_1 < 57)
 		{
-			putchar(num_1);
-
 			while (num_3 < 58)
 			{
-				putchar(num_2);
 				if (num_1 != num_2 && num_2 != num_3 && num_1 != num_3
 						&& num_3 > num_2 && num_2 > num_1)
 				{
