@@ -21,11 +21,13 @@ int main(void)
 	while (ch <= 'z')
 	{
 		putchar((int) ch);
+		ch++;
 	}
 
 	while (CH <= 'Z')
 	{
 		putchar((int) CH);
+		CH++;
 	}
 
 	putchar('\n');
