@@ -26,7 +26,7 @@ int main(void)
 
 	else if (rem < 6 && rem != 0)
 		printf("Last digit of %d" " is less than %d" " and not %d"
-				" is less than 6 and not 0", n, 6, 0);
+				" is less than 6 and not 0", n, 6, 10);
 
 	printf("\n");
 	return (0);
