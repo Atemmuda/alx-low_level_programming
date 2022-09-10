@@ -18,8 +18,11 @@ int main(void)
 	while (num < 58)
 	{
 		putchar(num);
-		putchar((int) ',');
-		putchar((int) ' ');
+		if (d != 57)
+		{
+			putchar((int) ',');
+			putchar((int) ' ');
+		}
 		num++;
 	}
 
