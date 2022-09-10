@@ -24,8 +24,8 @@ int main(void)
 	else if (rem == 0)
 		printf("Last digit of %d" " is %d" " and is 0", n, rem);
 	else if (rem < 6 && rem != 0)
-		printf("Last digit of %d" " is %d" " less than %d" " and not %d"
-				" is less than 6 and not 0", n, rem, 6, 0);
+		printf("Last digit of %d" " is %d" " and is less than %d" " and not %d"
+				" and not 0", n, rem, 6, 0);
 
 	printf("\n");
 	return (0);
