@@ -13,9 +13,9 @@ int main(void)
 {
 	int num;
 
-	num = 0;
+	num = 48;
 
-	while (num < 10)
+	while (num < 48)
 	{
 		putchar(num);
 		num++;
