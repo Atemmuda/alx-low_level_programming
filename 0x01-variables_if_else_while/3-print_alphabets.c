@@ -18,13 +18,13 @@ int main(void)
 	ch = 'a';
 	CH = 'A';
 
-	while(ch <= 'z')
+	while (ch <= 'z')
 	{
 		putchar((int) ch);
 		putchar('\n');
 	}
 
-	while(CH <= 'Z')
+	while (CH <= 'Z')
 	{
 		putchar((int) CH);
 		putchar('\n');
