@@ -8,11 +8,10 @@
  *
  * Return: Always 1 (Success)
  */
-int main(void)
+int main(int argc, char *argv)
 {
-	char error[11];
-       error = ["and ", "that ", "piece ", "of ", "art " , "is ", "useful\" " , "-", " Dora", " Korpar", " 2015-10-19", "\n"];
-	write(2, error, 59);
+	char *error[] =  {"and that piece of art is useful\"" "- Dora Korpar 2015-10-19 \n"};
+	write(2, &error, 59);
 
 	return (1);
 }
