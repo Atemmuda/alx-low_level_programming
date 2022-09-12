@@ -25,7 +25,7 @@ int main(void)
 			if (num_1 != num_2 || num_2 > num_1)
 			{
 
-				if (!(num_1 == 56 && num_2 == 57))
+				if (num_1 == 56 && num_2 == 57)
 				{
 					putchar(num_1);
 					putchar(num_2);
