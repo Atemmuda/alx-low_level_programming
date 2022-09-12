@@ -28,7 +28,7 @@ int main(void)
 				if (!(num_1 == 56 && num_2 == 57))
 				{
 					putchar(num_1);
-					putchar(num_i2);
+					putchar(num_2);
 					putchar((int) ',');
 					putchar((int) ' ');
 				}
