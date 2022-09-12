@@ -31,11 +31,11 @@ int main(void)
 					putchar(num_2);
 					putchar((int) ',');
 					putchar((int) ' ');
-					num_2++;
-					num_1++;
 				}
 			}
+			num_2++;
 		}
+		num_1++;
 	}
 
 	putchar('\n');
