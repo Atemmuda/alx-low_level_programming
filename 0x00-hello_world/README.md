@@ -1,9 +1,9 @@
 # DIrectory 0x00. C - Hello, world 
 ## contains some code snippets that does task upon execution
-** File Name **  | ** What is does **
------------------|--------------------
+File Name | What is does
+----------|----------
 0-preprocessor | Runs a C file through the preprocessor and save the result into another file.
-1-compiler | contains ascript that compiles a C file but does not link. * The c file name is saved the variable $CFILE. *THe output should be named as the C file but with the extension .o instead of .c.
+1-compiler | contains ascript that compiles a C file but does not link. * The c file name is saved the variable $CFILE. *The output should be named as the C file but with the extension .o instead of .c.
 2-assembler | Generate the assemley code of a C code and save in an output file.
 3-name | Compiles a C file and create an executable named cisfun.
 4-puts | print the word between the qoute to the screen.
