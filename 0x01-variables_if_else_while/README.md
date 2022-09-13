@@ -1,11 +1,11 @@
-#Writing C code with the strict betty linter
+# Writing C code with the strict betty linter
 ## Concepts
 * Variables
 * While Loop
 * If statements
-* If else statements
+* If else statements.
  File | Description
- ------|------------
+ ---- | ------------
 0-positive_or_negative.c | print a number to be negative or positive or zero depending on value of random n.
 1-last_digit.c | program assigns random number to the variable n programme print the last digit of n (uses % operator)
 2-print_alphabet.c | prints the alphabet in lowercase.
