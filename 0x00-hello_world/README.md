@@ -1,7 +1,7 @@
 # DIrectory 0x00. C - Hello, world 
 ## contains some code snippets that does task upon execution
-File Name  |  What is does
------------|-------------
+** File Name **  | ** What is does **
+-----------------|--------------------
 1. 0-preprocessor | Runs a C file through the preprocessor and save the result into another file.
 2. 1-compiler | contains ascript that compiles a C file but does not link. * The c file name is saved the variable $CFILE. *THe output should be named as the C file but with the extension .o instead of .c.
 3. 2-assembler | Generate the assemley code of a C code and save in an output file.
