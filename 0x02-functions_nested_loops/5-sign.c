@@ -4,8 +4,6 @@
  * @a:integer value
  *
  * Return: -1 if negative 0 if a is zero and 1 otherwise.
- * Return: 0 if 0.
- * Return: 1 if positive.
  */
 int print_sign(int a)
 {
@@ -16,6 +14,7 @@ int print_sign(int a)
 	}
 	else if (a == 0)
 	{
+		_putchar((char) a)
 		_putchar((char) 0);
 		return (0);
 	}
