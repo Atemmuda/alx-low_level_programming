@@ -22,4 +22,5 @@ void print_alphabet(void)
 		_putchar((char) 10);
 
 	}
+	return(void);
 }
