@@ -6,14 +6,14 @@
  *
  * Return: the summation.
  */
-void print_to_98(int a)
+void print_to_98(int n)
 {
 	int i;
 	int j;
 
 	if (n <= 98)
 	{
-		for (i = n; i < = 98; i++)
+		for (i = n; i <= 98; i++)
 		{
 			if (i != 98)
 				printf("%d, ", i);
