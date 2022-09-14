@@ -1,10 +1,10 @@
 #include "main.h"
 /**
  * add - adds two numbers anr produce the answer
- * 
- * @ int: acceptable data type
+ * @a:first integer value
+ * @b:second integer value
  *
- * Return: the summation
+ * Return: the summation.
  */
 int add(int a, int b)
 {
