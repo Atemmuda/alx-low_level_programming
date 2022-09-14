@@ -2,8 +2,6 @@
 
 /**
  * print_alphabeti_x10 - Prints all the alphabets, a-z ten times
- *
- * Return: always 0 success
  */
 void print_alphabet_x10(void)
 {
@@ -20,6 +18,6 @@ void print_alphabet_x10(void)
 			alpha++;
 		}
 
-	_putchar((char) 10);
+		_putchar((char) 10);
 	}
 }
