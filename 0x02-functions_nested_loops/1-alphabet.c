@@ -1,4 +1,4 @@
-#<include> "main.h"
+#include "main.h"
 
 /**
  * print_alphabet: Prints all the alphabets, a-z
@@ -12,7 +12,7 @@ void print_alphabet(void)
 
        while(alpha <= 'z')
        {
-		_putchar((int) alpha)
+		_putchar((int) alpha);
        }
-       _putchar('/n')
+       _putchar('/n');
 }
