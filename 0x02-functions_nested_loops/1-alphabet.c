@@ -1,0 +1,18 @@
+#<include> "main.h"
+
+/**
+ * print_alphabet: Prints all the alphabets, a-z
+ *
+ * Return: always 0 success
+ */
+void print_alphabet(void)
+{
+	char alpha;
+       alpha = 'A';
+
+       while(alpha <= 'z')
+       {
+		_putchar((int) alpha)
+       }
+       _putchar('/n')
+}
