@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * print_alphabet: Prints all the alphabets, a-z
+ * print_alphabet - Prints all the alphabets, a-z
  *
  * Return: always 0 success
  */
 void print_alphabet(void)
 {
 	char alpha;
-       alpha = 'A';
+       alpha = 'a';
 
        while(alpha <= 'z')
        {
