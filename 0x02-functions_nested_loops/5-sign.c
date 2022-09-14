@@ -14,7 +14,7 @@ int print_sign(int a)
 	}
 	else if (a == 0)
 	{
-		_putchar((char) a)
+		_putchar((char) a);
 		_putchar((char) 0);
 		return (0);
 	}
