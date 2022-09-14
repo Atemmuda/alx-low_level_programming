@@ -3,7 +3,7 @@
  *print_sign - Prints the sign on number
  * @a:integer value
  *
- * Return: -1 if negative.
+ * Return: -1 if negative 0 if a is zero and 1 otherwise.
  * Return: 0 if 0.
  * Return: 1 if positive.
  */
@@ -11,7 +11,7 @@ int print_sign(int a)
 {
 	if (a < 0)
 	{
-		_putchar('+');
+		_putchar('-');
 		return (-1);
 	}
 	else if (a == 0)
@@ -20,6 +20,6 @@ int print_sign(int a)
 		return (0);
 	}
 
-	_putchar((char) 1);
+	_putchar('+');
 	return (1);
 }
