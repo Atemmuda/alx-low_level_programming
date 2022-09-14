@@ -1,9 +1,6 @@
 #include "main.h"
 /**
- * times_table - adds two numbers anr produce the answer
- * @a:first integer value
- * @b:second integer value
- *
+ * times_table - prints the nine times table.
  */
 void times_table(void)
 {
