@@ -6,7 +6,7 @@
  *
  * Return: the summation
  */
-int add(int a, intb)
+int add(int a, int b)
 {
 	return (a + b);
 }
