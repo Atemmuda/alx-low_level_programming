@@ -20,6 +20,6 @@ void print_alphabet_x10(void)
 			alpha++;
 		}
 
-	}
 	_putchar((char) 10);
+	}
 }
