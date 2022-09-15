@@ -2,6 +2,9 @@
 
 /**
  * jack_bauer: Print the time in 00:00 format
+ * The time is printed in the jack bauer format
+ * h is hour
+ * m is min
  */
 void jack_bauer(void)
 {
