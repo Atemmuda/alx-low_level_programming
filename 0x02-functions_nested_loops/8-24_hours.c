@@ -1,25 +1,23 @@
 #include "main.h"
-#include <time.h>
 
 /**
  * jack_bauer: Print the time in 00:00 format
  */
 void jack_bauer(void)
 {
-	time_t now;
-	struct tm *cur_time;
+	int min;
+	int h;
 
-	now = time(NULL);
-	cur_time = localtime(&now);
-
-	for (cur_time->tm_min)
+	for (h = 0; h < 24; h++)
 	{
-		_putchar(cur_time->tm_hour);
-		_putchar(':');
-		_putchar(cur_time->tm_min);
-		_putchar(':');
-		_putchar(cur-min->tm_sec);
-		_putchar((char) 10);
+		for (min = 0; min < 60; min++)
+		{
+			_putchar((h / 10) + '0');
+			_putchar((h % 10) + '0');
+			_putchar(':');
+			_putchar((min / 10) + '0');
+			_putchar((min % 10) + '0');
+			_putchar((char) 10);
+		}
 	}
-
 }
