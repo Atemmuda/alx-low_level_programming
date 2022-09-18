@@ -18,7 +18,6 @@ void largest_prime(void)
 
 	while (number != 1)
 	{
-
 		if (number % i == 0)
 		{
 			while (number % i == 0)
@@ -29,8 +28,6 @@ void largest_prime(void)
 			large_factor = i;
 		}
 		i++;
-
 	}
 	printf ("\n\nThe largest prime factor is : %lld\n\n", large_factor);
-	return (0);
 }
