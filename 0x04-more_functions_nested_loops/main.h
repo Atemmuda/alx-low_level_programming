@@ -26,5 +26,5 @@ void print_triangle(int size);
 
 void print_number(int n);
 
-void largest_prime(void);
+void print_number(int n);
 #endif /* End of Header */
