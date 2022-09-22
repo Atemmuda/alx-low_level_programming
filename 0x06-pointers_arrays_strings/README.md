@@ -6,7 +6,7 @@
 
 File | Description
 ---- | -----------
-mani.h | Contains the headers prototypes
+main.h | Contains the headers prototypes
 _putchar | THe custom console printer
 0-strcat.c | This function appends the src string to the dest string, overwriting the terminating null byte (\0) at the end of dest, and then adds a terminating null byte
 1-strncat.c | Write a function that concatenates two strings.
