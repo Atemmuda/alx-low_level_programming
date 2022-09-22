@@ -1,3 +1,4 @@
+#include "main.h"
 /**
 * _strncpy -function concatenates two strings
 * @dest: resulting/destination string
