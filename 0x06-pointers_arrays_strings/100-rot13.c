@@ -10,17 +10,17 @@ char *rot13(char *encoded)
 {
 	int a = 0, b = 0, negate = -1;
 	char alpha[] = "ANBOCPDQERFSGTHUIVJWKXLYMZanbocpdqerfsgthuivjwkxlymz";
-	
+
 	for (a = 0; encoded[a] != '\0'; a++)
 	{
-		negate = 1
+		negate = 1;
 		while (encoded[a] != alpha[b] && b < 52)
 		{
 			negate *= -1;
 			b++;
 		}
 		if (encoded[a] == alpha[b])
-			encoded[a] = (encoded[a] + (13 * negate))
-	} 
-	return (encoded)
+			encoded[a] = (encoded[a] + (13 * negate));
+	}
+	return (encoded);
 }
