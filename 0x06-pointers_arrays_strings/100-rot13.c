@@ -8,19 +8,19 @@
 
 char *rot13(char *encoded)
 {
-	int i;
-
-	for(i = 0; i <= 127; i++)
+	int a = 0, b = 0, negate = -1;
+	char alpha[] = "ANBOCPDQERFSGTHUIVJWKXLYMZanbocpdqerfsgthuivjwkxlymz";
+	
+	for (a = 0; encoded[a]; a++)
 	{
-		if((i >= 65 || i <= 90) || (i >= 97 || i <= 122))
+		negate = 1
+		while (encoded[a] != alpha[b] && b < 52)
 		{
-			encoded[i] = encoded[i] + 13;
-			if ((int) encoded[i] < 0)
-			{
-				(int)encoded[i] + 26;
-			}
+			negate *= -1;
+			b++;
 		}
-	}
-
+		if (encoded[a] == alpha[b])
+			encoded[a] = (encoded[a] + (13 * negate))
+	} 
 	return (encoded)
 }
