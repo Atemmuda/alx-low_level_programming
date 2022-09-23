@@ -2,7 +2,8 @@
 
 /**
  * rot13 - encode a string using rot13 encrypyion
- * @targ: the target string to encrypt
+ * @encoded: the target string to encrypt
+ * 
  * Return: the encrypted string
  */
 
@@ -11,7 +12,7 @@ char *rot13(char *encoded)
 	int a = 0, b = 0, negate = -1;
 	char alpha[] = "ANBOCPDQERFSGTHUIVJWKXLYMZanbocpdqerfsgthuivjwkxlymz";
 
-	for (a = 0; encoded[a] != '\0'; a++)
+	for (a = 0; encoded[a]; a++)
 	{
 		negate = 1;
 		while (encoded[a] != alpha[b] && b < 52)
