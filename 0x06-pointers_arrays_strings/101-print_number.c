@@ -34,7 +34,7 @@ void print_number(int n)
 			n = n % divider;
 			n = n - 0;
 		}
-		else if
+		else if (n > 0)			
 		{
 			_putchar((n / divider) + '0');
 			n = n % divider;
