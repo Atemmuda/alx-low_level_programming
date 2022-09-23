@@ -11,7 +11,7 @@ char *rot13(char *encoded)
 	int a = 0, b = 0, negate = -1;
 	char alpha[] = "ANBOCPDQERFSGTHUIVJWKXLYMZanbocpdqerfsgthuivjwkxlymz";
 	
-	for (a = 0; encoded[a]; a++)
+	for (a = 0; encoded[a] != '\0'; a++)
 	{
 		negate = 1
 		while (encoded[a] != alpha[b] && b < 52)
