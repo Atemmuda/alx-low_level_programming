@@ -34,10 +34,12 @@ void print_number(int n)
 			n = n % divider;
 			n = n - 0;
 		}
-		else
+		else if
 		{
 			_putchar((n / divider) + '0');
 			n = n % divider;
 		}
+		else
+			_putchar('0');
 	}
 }
