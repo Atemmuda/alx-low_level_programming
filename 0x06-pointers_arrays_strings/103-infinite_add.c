@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * string_to_sum - get integer value of string of characters
+ * string_to_int - get integer value of string of characters
  * @s: string to change into integer
  *
  * Return: integer value of the string
@@ -39,18 +39,19 @@ int string_to_int(char *s)
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int num1, num2, sum, digits, i;
+	int num1, n, num2, sum, digits, i;
 
 	num1 = string_to_int(n1);
 	num2 = string_to_int(n2);
 	sum = num1 + num2;
+	n = sum;
 	digits = 1;
 	i = 0;
 
 	while ((sum / 10) != 0)
 	{
 		digits++;
-		sum /= 10;
+		n /= 10;
 	}
 	if ((digits + 1) > size_r)
 		return (0);
