@@ -14,7 +14,7 @@ int string_to_int(char *s)
 	int place = 1;
 	int num = 0;
 
-	while(s[i])
+	while (s[i])
 	{
 		size++;
 		i++;
@@ -50,18 +50,16 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	while ((sum / 10) != 0)
 	{
 		digits++;
-		n /= 10;
+		sum /= 10;
 	}
-	if ((digits +1) > size_r)
+	if ((digits + 1) > size_r)
 		return (0);
-	else
+
+	r[digits] = '\0';
+	for (i = (digits - 1); i >= 0; i--)
 	{
-		r[digits] = '\0';
-		for (i = (digits - 1); i >= 0; i--)
-		{
-			r[i] = (sum % 10) + '0';
-			sum /= 10;
-		}
+		r[i] = (sum % 10) + '0';
+		sum /= 10;
 	}
 	return (r);
 }
