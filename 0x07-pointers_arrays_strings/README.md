@@ -12,4 +12,4 @@ File | Description
 7-print_chessboard.c | Print the pattern of the chess board
 8-print_diagsums.c | Contains a function that print the sum of two diagonals of a square matrix of integers
 100-set_string.c | COntains a funtion that sets the value of a pointer to char
-101-crackme_password.c | Create a file that contains the password for the crackme2 executable.wq
+101-crackme_password | Create a file that contains the password for the crackme2 executable.wq
