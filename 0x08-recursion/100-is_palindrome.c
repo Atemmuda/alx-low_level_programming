@@ -1,4 +1,5 @@
 #include "main.h"
+int stringlength(char *s int count);
 int matching(char *s, int end);
 
 /**
@@ -11,7 +12,7 @@ int is_palindrome(char *s)
 {
 	int end;
 
-	end = (_strlen_recursion(s)) - 1;
+	end = (stringlength(s, 0)) - 1;
 
 	return (matching(s, end));
 }
