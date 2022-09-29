@@ -1,5 +1,5 @@
 #include "main.h"
-int stringlength(char *s int count);
+int stringlength(char *s, int count);
 int matching(char *s, int end);
 
 /**
