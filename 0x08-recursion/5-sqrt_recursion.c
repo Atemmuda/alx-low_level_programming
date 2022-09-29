@@ -2,7 +2,7 @@
 int square_root(int n, int i);
 
 /**
- * _pow_recursion - finds the x to the power of y
+ * _sqrt_recursion - finds the squareroot of n
  * @n: number to find its square root
  *
  * Return: -1 if n has not natural
@@ -16,7 +16,7 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (square_root(n, (n + 1) / 2));
+		return (square_root(n, (n / 2) + 1));
 	}
 }
 /**
