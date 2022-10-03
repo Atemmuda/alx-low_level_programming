@@ -1,0 +1,37 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - adds two numbers
+ * @argv: The number of elements passed at runtime
+ * @argc:  character array of elements
+ * if argc[1] == NULL print 0
+ * if argc[i] is not digit, print error
+ *
+ * Return: 0 on success or 1 on error
+ */
+int main(int argc, char *argv[])
+{
+	int  i, sum, num;
+
+	sum = 0;
+
+	if (argv[1] == NULL)
+	{
+		printf("%d\n", 0);
+	}
+	for (i = 0; i < argc; i++)
+		if (argv[i] > '9' || argv[i] < '0')
+		{
+			printf("Error\n");
+			return (1);
+		}
+		else
+		{
+			num = atoi(argv[i]);
+			sum = sum + num;
+		}
+	printf("%d\n", sum);
+	return (0);
+}
