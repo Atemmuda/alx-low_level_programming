@@ -1,7 +1,7 @@
 # 0x0B. C - malloc, free
 ## Concept
 * Dynamic memory allocation.
-File | Description
+File | Description.
 ---- | -----------
 main.h | Contains prototype headers
 0-create_array.c | Write a function that creates an array of chars, and initializes it with a specific char.
