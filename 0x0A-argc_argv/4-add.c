@@ -22,19 +22,22 @@ int main(int argc, char *argv[])
 	{
 		printf("%d\n", 0);
 	}
-	for (i = 0; i < argc; i++)
+	else
 	{
-		for (j = 0; j < argv[i][j]; j++)
+		for (i = 0; i < argc; i++)
 		{
-			if (isdigit(argv[i][j]) == 0)
+			for (j = 0; j < argv[i][j]; j++)
 			{
-				printf("Error\n");
-				return (1);
+				if (isdigit(argv[i][j]) == 0)
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
-		}
-		if (atoi(argv[i]) >= 0)
-		{
-			sum += atoi(argv[i]);
+			if (atoi(argv[i]) >= 0)
+			{
+				sum += atoi(argv[i]);
+			}
 		}
 	}
 	printf("%d\n", sum);
