@@ -22,11 +22,13 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		for (i = 0; i < size; i++)
+		for (i = 1; i <= size; i++)
 		{
+			_putchar(array[i]);
 			array[i] = c;
 		}
 	}
 	array[i] = '\0';
+	free(array);
 	return (array);
 }
