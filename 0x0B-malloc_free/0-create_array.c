@@ -25,10 +25,10 @@ char *create_array(unsigned int size, char c)
 		for (i = 1; i <= size; i++)
 		{
 			_putchar(array[i]);
-			*(array + 1) = c;
+			*(array + i) = c;
 		}
 	}
-	*(array + 1) = '\0';
+	*(array + i) = '\0';
 	free(array);
 	return (array);
 }
