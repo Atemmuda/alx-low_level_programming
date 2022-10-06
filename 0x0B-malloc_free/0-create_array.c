@@ -3,32 +3,32 @@
 #include "main.h"
 
 /**
- * create_array - ctreate array of characters, initialize with
- * specicfic characters
- * @size: input size of array
- * @c: input character to initialize with
+ * *create_array - creates an array of chars,
+ * and initializes it with a specific char
+ * @size: size of the array to create
+ * @c: char to initialize the array c
  *
- * Return: initialised character array
+ * Return: pointer to the array (Success), NULL (Error)
  */
 
 char *create_array(unsigned int size, char c)
 {
-	unsigned int i;
-	char *array = (char *) malloc(sizeof(char) * size);
+	char *p;
+	unsigned int i = 0;
 
-	if (size == 0 || *array == '\0')
-	{
+	if (size == 0)
+		return (NULL);
+
+	p = (char *) malloc(sizeof(char) * size);
+	if (p == NULL)
 		return (0);
-	}
-	else
+
+	while (i < size)
 	{
-		for (i = 1; i <= size; i++)
-		{
-			_putchar(array[i]);
-			*(array + i) = c;
-		}
+		*(p + i) = c;
+		i++;
 	}
-	*(array + i) = '\0';
-	free(array);
-	return (array);
+
+	*(p + i) = '\0';
+	return (p);
 }
