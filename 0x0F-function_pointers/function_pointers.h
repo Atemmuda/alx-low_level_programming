@@ -2,7 +2,7 @@
 #define FUNCTION_POINTERS_H
 #include <stdlib.h>
 
-/*Custom made printer
+/* Custom made printer */
 int _putchar(char c);
 
 void print_name(char *name, void (*f)(char *));
