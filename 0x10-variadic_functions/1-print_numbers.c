@@ -19,7 +19,6 @@ void print_numbers(const char *separator, unsigned int n, ...)
 	if (n < 0)
 	{
 		printf("\n");
-		return;
 	}
 
 	for (i = 0; i < n; i++)
