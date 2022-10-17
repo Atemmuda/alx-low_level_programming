@@ -1,53 +1,99 @@
+#include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
-#include "variadic_functions.h"
+#include <stdlib.h>
 
-
+void printc(va_list args);
+void printi(va_list args);
+void printft(va_list args);
+void prints(va_list args);
 
 /**
- * print_all - prints anything
- * @format: list of types of arguments passed to the function
+ * print_all - prints all arguments passed, with separator
+ * @format: input number of strings
+ *
  */
+
 void print_all(const char * const format, ...)
 {
-	int i = 0;
-	char *str, *sep = "";
-	va_list list;
 
-	va_start(list, format);
+	va_list args;
+	int counter = 0;
+	int index = 0;
 
-	if (format)
+	array[] = {
+		{"c", printc},
+		{"i", printi},
+		{"f", printft},
+		{"s", prints},
+		{NULL, NULL}
+	};
+
+	char *separator = "";
+
+	va_start(args, format);
+	while (format != NULL && format[counter])
 	{
-		while (format[i])
+		index = 0;
+		while (array[index].c)
 		{
-			switch (format[i])
+			if (format[counter] == *(array[index].c))
 			{
-				case 'c':
-					printf("%s%c", sep, va_arg(list, int));
-					break;
-				case 'i':
-					printf("%s%d", sep, va_arg(list, int));
-					break;
-				case 'f':
-					printf("%s%f", sep, va_arg(list, double))
-					break;
-				case 's':
-					str = va_arg(list, char *);
-
-					if (!str)
-						str = "(nil)";
-					printf("%s%s", sep, str);
-					break;
-
-				default:
-					i++
-					continue;
+				printf("%s", separator);
+				array[index].func(args);
+				separator = ", ";
 			}
-			sep = ", ";
-			i++;
+			index++;
 		}
+		counter++;
 	}
-
 	printf("\n");
-	va_end(list);
+	va_end(args);
+}
+
+/**
+ * printc - printf with character
+ * @args: integer value of single character to print
+ *
+ */
+void printc(va_list args)
+{
+	printf("%c", va_arg(args, int));
+}
+
+/**
+ * printi - printf with integer
+ * @args: integer value to print
+ *
+ */
+void printi(va_list args)
+{
+	printf("%i", va_arg(args, int));
+}
+
+/**
+ * printft - printf with float
+ * @args: float value to print
+ *
+ */
+void printft(va_list args)
+{
+	printf("%f", va_arg(args, double));
+}
+
+/**
+ * prints - printf with string
+ * @args: character pointer to string of character to print
+ *
+ */
+void prints(va_list args)
+{
+	char *s = va_arg(args, char *);
+
+	if (s != NULL)
+	{
+		printf("%s", s);
+		return;
+	}
+	printf("(nil)");
 }
