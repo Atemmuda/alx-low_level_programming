@@ -12,6 +12,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int base, i, decimal;
 	int bit, length, multiplier = 1, count = 0;
+
 	if (b == NULL)
 	{
 		return (0);
@@ -48,5 +49,6 @@ int power(int count)
 	{
 		m *= 2;
 	}
+
 	return (m);
 }
