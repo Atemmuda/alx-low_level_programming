@@ -10,7 +10,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int base, i, decimal;
+	unsigned int i, decimal;
 	int bit, length, multiplier = 1, count = 0;
 
 	if (b == NULL)
@@ -18,7 +18,7 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	}
 	length = _strlen(b);
-	for (i = (length - 1); i >= 0; i--, count++)
+	for (i = (length - 1); i > 0; i--, count++)
 	{
 		bit = b[i] - '0';
 		if (bit != 0 && bit != 1)
@@ -36,7 +36,7 @@ int _strlen(char *s)
 {
 	int i = 0;
 
-	for (i; s[i]; i++)
+	for (i = 0; s[i]; i++)
 		continue;
 	return (i);
 }
