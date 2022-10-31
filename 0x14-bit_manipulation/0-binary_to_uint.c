@@ -10,9 +10,8 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int decimal;
-	int i = 0, length = 0, count = 0, multiplier = 0, bit;
-
+	unsigned int base, i, decimal;
+	int bit, length, multiplier = 1, count = 0;
 	if (b == NULL)
 	{
 		return (0);
@@ -26,25 +25,18 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		}
 		multiplier = power(count);
+
 		decimal += multiplier * bit;
 	}
 	return (decimal);
 }
 
-/**
- * _strlen - gives out the length of the string
- * @s: pointer to the string
- *
- * Return: the length of the string
- */
-unsigned int _strlen(char *s)
+int _strlen(char *s)
 {
-	unsigned int i;
+	int i = 0;
 
-	for (i = 0; s[i]; i++)
-	{
+	for (i; s[i]; i++)
 		continue;
-	}
 	return (i);
 }
 
