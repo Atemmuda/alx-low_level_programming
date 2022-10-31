@@ -11,7 +11,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int base, i, decimal;
 
-	if (b == NULL)
+	if (b == '\0')
 		return (0);
 	i = 0;
 	while (b[i])
@@ -30,4 +30,12 @@ unsigned int binary_to_uint(const char *b)
 	}
 
 	return (decimal);
+}
+
+int main(void)
+{
+	unsigned int vl = binary_to_uint("");
+	printf("%d", vl);
+
+	return (0);
 }
