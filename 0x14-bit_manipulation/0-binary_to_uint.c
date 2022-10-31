@@ -32,6 +32,13 @@ unsigned int binary_to_uint(const char *b)
 	return (decimal);
 }
 
+/**
+ * _strlen - finds the length of string
+ * @s: the string pointer
+ *
+ * Return: the length of the string
+ */
+
 int _strlen(const char *s)
 {
 	int i = 0;
@@ -40,6 +47,13 @@ int _strlen(const char *s)
 		continue;
 	return (i);
 }
+
+/**
+ * power - finds two to the power
+ * @count: The number of occurence of two
+ *
+ * Return: 2 to the power of occurences
+ */
 
 int power(int count)
 {
