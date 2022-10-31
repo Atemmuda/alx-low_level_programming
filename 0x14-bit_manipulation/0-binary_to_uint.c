@@ -32,7 +32,7 @@ unsigned int binary_to_uint(const char *b)
 	return (decimal);
 }
 
-int _strlen(char *s)
+int _strlen(const char *s)
 {
 	int i = 0;
 
