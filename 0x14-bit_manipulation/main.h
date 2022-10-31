@@ -5,7 +5,7 @@ int _putchar(char c);
 
 /* Helper functions */
 int power(int count);
-int _strlen(char *s);
+int _strlen(const char *s);
 
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
