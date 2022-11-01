@@ -2,8 +2,10 @@
 
 /**
  * int get_endianess - a function that checks the endianness.
+ * to determine how system reads bits
  *
- * Return: 0 if big endian, 1 if little endian
+ * Return: 0 if big endian (read from lsb),
+ * 1 if little endian (from msb)
  */
 int get_endianness(void)
 {
