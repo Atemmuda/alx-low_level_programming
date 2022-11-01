@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int get_endianess - a function that checks the endianness.
+ * get_endianness - a function that checks the endianness.
  * to determine how system reads bits
  *
  * Return: 0 if big endian (read from lsb),
@@ -11,7 +11,7 @@ int get_endianness(void)
 {
 	unsigned int i;
 
-	if (*(char *)&i == 1)
+	if (*(char *)&i)
 	{
 		return (1);
 	}
