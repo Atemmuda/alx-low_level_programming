@@ -16,19 +16,30 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int file_des;
+	int file_des, wr, text_size;
 	char *buf;
 
+	text_size = 0;
+
 	if (filename == NULL)
-	{
 		return (-1);
-	}
 
 	if (text_content == NULL)
-	{
 		return (1);
-	}
-	
 
-        return (0);
+	file_des = open(filename, O_CREAT | O_RDWR | O_TRUNC);
+	if (file_des == -1)
+		return (-1);
+
+	while (text_content[text_size])
+		text_size++;
+
+	wr = write(file_des, text_content, text_size);
+
+	if (wr < 0)
+		return (-1);
+
+	if (close(fd) < 0)
+		return (-1);
+	return (1);
 }
