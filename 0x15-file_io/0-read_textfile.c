@@ -17,6 +17,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int file_des;
 
-	file_des = open(*filename, );
-	return (letters);
+	file_des = open(*filename, O_RDONLY, 0400);
+	if (filename == NULL)
+	{
+		return (0);
+	}
+
+	if (!O_CREAT)
+	{
+		return (0);
+	}
+
+		return (letters);
 }
