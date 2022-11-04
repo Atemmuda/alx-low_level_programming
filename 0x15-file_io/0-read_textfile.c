@@ -25,7 +25,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	file_des = open(filename, O_RDONLY);
-
 	if (file_des == -1)
 	{
 		return (0);
@@ -44,6 +43,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buf);
 		return (0);
 	}
+	buf[rd] = '\0';
 
 	wr = write(STDOUT_FILENO, buf, rd);
 	if (wr == -1)
@@ -51,8 +51,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buf);
 		return (0);
 	}
-
+	close(file_des);
 	free(buf);
-
 	return (wr);
 }
