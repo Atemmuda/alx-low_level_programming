@@ -5,8 +5,9 @@
  * @filename: is the name of the file to create
  * @text_content: is a NULL terminated string to write to the file
  *
- * Returns: 1 on success, -1 on failure
- * (file can not be created, file can not be written, write “fails”, etc…)
+ * Return: 1 on success, -1 on failure
+ * (file can not be created, file can not be written,
+ * write “fails”, etc…)
  * The created file must have those permissions: rw-------.
  * If the file already exists, do not change the permissions.
  * if the file already exists, truncate it
@@ -17,7 +18,6 @@
 int create_file(const char *filename, char *text_content)
 {
 	int file_des, wr, text_size;
-	char *buf;
 
 	text_size = 0;
 
@@ -39,7 +39,7 @@ int create_file(const char *filename, char *text_content)
 	if (wr < 0)
 		return (-1);
 
-	if (close(fd) < 0)
+	if (close(file_des) < 0)
 		return (-1);
 	return (1);
 }
