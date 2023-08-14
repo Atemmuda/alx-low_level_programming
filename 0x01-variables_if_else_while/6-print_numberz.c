@@ -4,6 +4,7 @@
  * main - Entry of the program
  *
  * prints first 10 base ten numbers
+ * using the ascii representation
  *
  * Return: zero(0) for success
  */
@@ -12,10 +13,10 @@ int main(void)
 {
 	int n;
 
-	n = 0;
-	while (n < 10)
+	n = 48;
+	while (n < 58)
 	{
-		putchar((int)n);
+		putchar(n);
 		n++;
 	}
 
