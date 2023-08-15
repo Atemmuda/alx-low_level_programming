@@ -16,7 +16,7 @@ int main(void)
 
 	while (i < 7)
 	{
-		k = j + 1;
+		j = i + 1;
 		while (j < 8)
 		{
 			k = j + 1;
