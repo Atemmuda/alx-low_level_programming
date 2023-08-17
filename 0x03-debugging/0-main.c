@@ -1,9 +1,7 @@
 #include "main.h"
 /**
  * main - Entry point of the program
- *
- * Testing positive_or_negative function
- * Return: zero(0) on success
+ * Return: 0
 */
 
 int main(void)
@@ -15,4 +13,3 @@ int main(void)
 
 	return (0);
 }
-
