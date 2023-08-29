@@ -3,7 +3,7 @@
 
 
 /**
- * print_diagsums: prints the sum od the daigonal
+ * print_diagsums - prints the sum od the daigonal
  * of the n*m dimanentional array
  *
  * @a: pointer to the array
