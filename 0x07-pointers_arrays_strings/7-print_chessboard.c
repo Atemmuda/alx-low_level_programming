@@ -2,7 +2,7 @@
 
 
 /**
- * print_chessboard: print chess board
+ * print_chessboard - print chess board
  * of the n*m dimanentional array
  *
  * @a: pointer to the array
