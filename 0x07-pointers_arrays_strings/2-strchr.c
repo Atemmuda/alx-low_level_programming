@@ -1,7 +1,8 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _strchr: a function that copies memory area
+ * _strchr - a function that copies memory area
  *
  * @s: pointer to characters to search from
  * @c: the chareacter being searched for
@@ -12,14 +13,20 @@
  */
 char *_strchr(char *s, char c)
 {
-	unsigned int i;
+	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	i = 0;
+	while (s[i] != c && s[i] != '\0')
+		i++;
+
+	if (s[i] == '\0')
 	{
-		if (s[i] == c)
+		if (c == '\0')
 			return (&s[i]);
+		else
+			return ('\0');
 	}
-
-	return ('\0');
+	else
+		return (&s[i]);
 }
 
