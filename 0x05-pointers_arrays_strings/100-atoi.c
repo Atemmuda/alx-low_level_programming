@@ -1,41 +1,88 @@
+#include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
-
 /**
- * main - playing with the atoi function
+ * _atoi - a function that convert a string to an integer.
+ * @s: pointer to the string
  *
- * Return: 0 on success
+ * Return: the intger for the string
  */
-int _atoi(char *s);
-int main(void)
-{
-	int at;
-
-	at = atoi("-109");
-
-	int taa = _atoi("109"); // personally writen
-	printf("atoi('result109') is %d\n", at);
-	printf("_atoi_('result109') is %d\n", taa);
-	return (0);
-}
-
 int _atoi(char *s)
 {
-	int i, num_for_str;
+	int i, sign, plus_count, minus_count, num_for_str;
+
+	i = 0;
+
+	/* Leading white spaces */
+	sign = 1;
+	if (s[0] == '-')
+	{
+		sign = -1;
+		i++;
+	}
 
 	num_for_str = 0;
-
-	for (i = 0; s[i] != '\0'; i++)
+	plus_count = 0;
+	minus_count = 0;
+	for (; s[i] != '\0'; i++)
 	{
+		if (s[i] == ' ')
+		{
+			i++;
+		}
+		if (s[i] == '+')
+		{
+			i++;
+			plus_count += 1;
+		}
+		else if (s[i] == '-')
+		{
+			sign = -1;
+			i++;
+			minus_count += 1;
+		}
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			num_for_str = num_for_str * 10 + s[i] - '0';
 		}
+		else if (s[i] != '\0')
+			i++;
 		else
 		{
 			break;
 			return (0);
 		}
 	}
-	return (num_for_str);
+	if (plus_count < minus_count && minus_count % 2 != 0)
+	{
+		sign = -1;
+	}
+	return (num_for_str * sign);
+}
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    int nb;
+
+    nb = _atoi("98");
+    printf("%d\n", nb);
+    nb = _atoi("-402");
+    printf("%d\n", nb);
+    nb = _atoi("          ------++++++-----+++++--98");
+    printf("%d\n", nb);
+    nb = _atoi("214748364");
+    printf("%d\n", nb);
+    nb = _atoi("0");
+    printf("%d\n", nb);
+    nb = _atoi("Suite 402");
+    printf("%d\n", nb);
+    nb = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
+    printf("%d\n", nb);
+    nb = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
+    printf("%d\n", nb);
+    return (0);
 }
