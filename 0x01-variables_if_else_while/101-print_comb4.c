@@ -14,19 +14,19 @@ int main(void)
 
 	i = 0;
 
-	while (i < 7)
+	while (i <= 7)
 	{
 		j = i + 1;
-		while (j < 8)
+		while (j <= 8)
 		{
 			k = j + 1;
-			while (k < 9)
+			while (k <= 9)
 			{
 				putchar(i + '0');
 				putchar(j + '0');
 				putchar(k + '0');
 
-				if (i != 6 || j != 7 || k != 8)
+				if (i != 7 || j != 8 || k != 9)
 				{
 					putchar(',');
 					putchar(' ');
