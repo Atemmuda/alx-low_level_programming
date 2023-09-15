@@ -1,0 +1,2 @@
+betty "$1"
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 "$1"
