@@ -5,16 +5,16 @@ int _putchar(char c); /* given */
 int _islower(int c);
 int _isalpha(int c);
 int _abs(int);
-/* int _isupper(int c);  yet to code */
-/* int _isdigit(int c);  yet to code */
+int _isupper(int c);
+int _isdigit(int c); 
 int _strlen(char *s);
 void _puts(char *str);
 char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
-/* char *_strcat(char *dest, char *src);  yet to code */
-/* char *_strncat(char *dest, char *src, int n);  yet to code */
-/* char *_strncpy(char *dest, char *src, int n);  yet to code */
-/* int _strcmp(char *s1, char *s2);  yet to code */
+char *_strcat(char *dest, char *src); /* yet to code */
+char *_strncat(char *dest, char *src, int n); /* yet to code */
+char *_strncpy(char *dest, char *src, int n); /* yet to code */
+int _strcmp(char *s1, char *s2); /* yet to code */
 char *_memset(char *s, char b, unsigned int n);
 char *_memcpy(char *dest, char *src, unsigned int n);
 char *_strchr(char *s, char c);
