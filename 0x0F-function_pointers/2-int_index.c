@@ -1,6 +1,5 @@
 #define NULL 0
 #include <stdlib.h>
-#include "function_pointers.h"
 
 /**
  * int_index - passes array of ints thru functions

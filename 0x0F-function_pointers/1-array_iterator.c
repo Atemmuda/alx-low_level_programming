@@ -1,6 +1,6 @@
 #define NULL 0
 #include <stdlib.h>
-#include "function_pointers.h"
+
 
 /**
  * array_iterator - executes function as a parameter
